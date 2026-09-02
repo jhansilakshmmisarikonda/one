@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NexusShop · modern e‑commerce</title>
-  <!-- Fonts & Icons -->
+  <title>NexusShop · fresh & friendly</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
@@ -17,17 +16,18 @@
     }
 
     :root {
-      --bg: #f8faff;
+      --bg: #f6f9fc;
       --card-bg: #ffffff;
-      --primary: #1a2e4f;
-      --primary-light: #2d4a7a;
+      --primary: #1f3a5f;
+      --primary-light: #3b5a82;
       --accent: #4f9fff;
-      --accent-soft: #d4e4ff;
-      --text-muted: #5a6d86;
-      --text-dark: #13273e;
-      --shadow: 0 12px 30px rgba(35, 60, 110, 0.08);
-      --radius: 16px;
-      --radius-sm: 10px;
+      --accent-soft: #dbeafe;
+      --accent-glow: #b5d6ff;
+      --text-muted: #5b6f8a;
+      --text-dark: #14273e;
+      --shadow: 0 12px 28px rgba(31, 58, 95, 0.07);
+      --radius: 18px;
+      --radius-sm: 12px;
       --transition: 0.25s ease;
     }
 
@@ -46,9 +46,9 @@
 
     /* header */
     header {
-      background: rgba(255, 255, 255, 0.75);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid rgba(79, 159, 255, 0.12);
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(79, 159, 255, 0.10);
       position: sticky;
       top: 0;
       z-index: 50;
@@ -70,7 +70,7 @@
       color: var(--primary);
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 6px;
     }
     .brand .accent {
       color: var(--accent);
@@ -86,7 +86,7 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 8px 16px;
+      padding: 8px 18px;
       border-radius: 40px;
       font-weight: 500;
       font-size: 0.95rem;
@@ -103,9 +103,9 @@
       align-items: center;
       background: white;
       border-radius: 60px;
-      padding: 4px 4px 4px 18px;
-      box-shadow: 0 4px 12px rgba(35, 60, 110, 0.06);
-      border: 1px solid rgba(79, 159, 255, 0.15);
+      padding: 4px 4px 4px 20px;
+      box-shadow: 0 4px 14px rgba(31, 58, 95, 0.04);
+      border: 1px solid rgba(79, 159, 255, 0.10);
       min-width: 220px;
     }
     .search-wrap input {
@@ -120,7 +120,7 @@
       background: var(--accent);
       border: none;
       color: white;
-      padding: 10px 16px;
+      padding: 10px 18px;
       border-radius: 40px;
       cursor: pointer;
       font-size: 1rem;
@@ -133,7 +133,7 @@
     .header-actions {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
     }
     .icon-btn {
       background: transparent;
@@ -183,20 +183,20 @@
 
     /* hero */
     .hero {
-      background: linear-gradient(135deg, #dce9ff 0%, #eef4ff 100%);
-      border-radius: 0 0 40px 40px;
-      padding: 72px 0 64px;
-      margin-bottom: 12px;
+      background: linear-gradient(145deg, #e4effa 0%, #f0f7ff 100%);
+      border-radius: 0 0 48px 48px;
+      padding: 68px 0 60px;
+      margin-bottom: 8px;
       position: relative;
       overflow: hidden;
     }
     .hero::after {
       content: '';
       position: absolute;
-      right: -10%;
-      top: -30%;
-      width: 500px;
-      height: 500px;
+      right: -8%;
+      top: -40%;
+      width: 550px;
+      height: 550px;
       background: radial-gradient(circle, rgba(79, 159, 255, 0.08) 0%, transparent 70%);
       border-radius: 50%;
       pointer-events: none;
@@ -207,17 +207,20 @@
       max-width: 700px;
     }
     .hero h1 {
-      font-size: 3rem;
+      font-size: 3.1rem;
       font-weight: 700;
       letter-spacing: -0.02em;
       line-height: 1.2;
       color: var(--primary);
     }
+    .hero h1 .highlight {
+      color: var(--accent);
+    }
     .hero p {
       font-size: 1.1rem;
       color: var(--text-muted);
       margin: 18px 0 28px;
-      max-width: 540px;
+      max-width: 520px;
     }
     .btn-group {
       display: flex;
@@ -228,7 +231,7 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      padding: 14px 30px;
+      padding: 14px 32px;
       border-radius: 60px;
       font-weight: 600;
       border: none;
@@ -239,12 +242,12 @@
     .btn-primary {
       background: var(--accent);
       color: white;
-      box-shadow: 0 8px 20px rgba(79, 159, 255, 0.3);
+      box-shadow: 0 8px 22px rgba(79, 159, 255, 0.28);
     }
     .btn-primary:hover {
       background: var(--primary-light);
       transform: translateY(-2px);
-      box-shadow: 0 12px 28px rgba(79, 159, 255, 0.3);
+      box-shadow: 0 12px 30px rgba(79, 159, 255, 0.30);
     }
     .btn-outline {
       background: transparent;
@@ -258,7 +261,7 @@
 
     /* sections */
     .section {
-      padding: 48px 0 20px;
+      padding: 44px 0 16px;
     }
     .section-header {
       display: flex;
@@ -270,6 +273,7 @@
     .section-header h2 {
       font-size: 1.8rem;
       font-weight: 700;
+      color: var(--primary);
     }
     .section-header .muted {
       color: var(--text-muted);
@@ -285,22 +289,22 @@
     .cat-card {
       background: var(--card-bg);
       border-radius: var(--radius);
-      padding: 22px 10px;
+      padding: 22px 12px;
       text-align: center;
       box-shadow: var(--shadow);
       transition: var(--transition);
-      border: 1px solid rgba(79, 159, 255, 0.05);
+      border: 1px solid rgba(79, 159, 255, 0.04);
       cursor: pointer;
     }
     .cat-card:hover {
       transform: translateY(-6px);
       border-color: var(--accent);
-      box-shadow: 0 20px 36px rgba(79, 159, 255, 0.12);
+      box-shadow: 0 20px 36px rgba(79, 159, 255, 0.10);
     }
     .cat-card .icon {
       font-size: 2rem;
       color: var(--accent);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
     .cat-card h4 {
       font-weight: 600;
@@ -324,14 +328,14 @@
       flex-direction: column;
     }
     .product:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 40px rgba(35, 60, 110, 0.10);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(31, 58, 95, 0.08);
     }
     .product img {
       width: 100%;
       height: 210px;
       object-fit: cover;
-      background: #f0f5ff;
+      background: #eef4fa;
     }
     .product-body {
       padding: 16px 16px 8px;
@@ -343,10 +347,10 @@
       margin-bottom: 4px;
     }
     .product-body .category-tag {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       color: var(--text-muted);
       text-transform: uppercase;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.03em;
     }
     .price-row {
       display: flex;
@@ -393,7 +397,7 @@
     }
     .wish-btn {
       background: var(--bg);
-      border: 1px solid #e9eff5;
+      border: 1px solid #e6edf5;
       border-radius: 40px;
       width: 48px;
       cursor: pointer;
@@ -401,9 +405,9 @@
       color: var(--text-muted);
     }
     .wish-btn:hover {
-      background: #ffe9ef;
-      color: #d14a6a;
-      border-color: #fccfdb;
+      background: #fce8ed;
+      color: #c74a6a;
+      border-color: #f7ccd8;
     }
 
     /* deal */
@@ -413,7 +417,7 @@
       border-radius: var(--radius);
       overflow: hidden;
       box-shadow: var(--shadow);
-      border: 1px solid rgba(79, 159, 255, 0.10);
+      border: 1px solid rgba(79, 159, 255, 0.06);
     }
     .deal-card img {
       width: 45%;
@@ -506,13 +510,14 @@
     }
     .newsletter .btn-primary:hover {
       background: var(--accent-soft);
+      color: var(--primary);
     }
 
     /* footer */
     footer {
-      margin-top: 40px;
+      margin-top: 36px;
       padding: 40px 0 24px;
-      border-top: 1px solid rgba(79, 159, 255, 0.08);
+      border-top: 1px solid rgba(79, 159, 255, 0.06);
       color: var(--text-muted);
     }
     .footer-grid {
@@ -543,9 +548,8 @@
 
     .muted { color: var(--text-muted); }
     .text-center { text-align: center; }
-    .mt-8 { margin-top: 8px; }
-    .gap-8 { gap: 8px; }
     .flex { display: flex; align-items: center; }
+    .gap-8 { gap: 8px; }
   </style>
 </head>
 <body>
@@ -580,8 +584,7 @@
         </div>
       </div>
     </div>
-    <!-- mobile menu -->
-    <div id="mobileMenu" style="display:none; background:white; padding:12px 24px; border-top:1px solid #eef4ff;">
+    <div id="mobileMenu" style="display:none; background:white; padding:12px 24px; border-top:1px solid #eef4f9;">
       <ul style="list-style:none; display:flex; flex-direction:column; gap:8px;">
         <li><a href="#">Home</a></li>
         <li><a href="#">Categories</a></li>
@@ -595,8 +598,8 @@
     <!-- hero -->
     <section class="hero">
       <div class="container hero-content">
-        <h1>Discover <span style="color:var(--accent);">season</span> favorites</h1>
-        <p>Curated tech, style &amp; lifestyle — all with a fresh look. Limited drops, free shipping.</p>
+        <h1>Discover <span class="highlight">fresh</span> seasonal picks</h1>
+        <p>Curated tech, style & lifestyle — all with a warm, friendly touch. Free shipping on orders over $50.</p>
         <div class="btn-group">
           <button class="btn btn-primary" id="shopNow">Shop now <i class="fas fa-arrow-right"></i></button>
           <button class="btn btn-outline" id="exploreDeals">Explore deals</button>
@@ -844,5 +847,4 @@
 
     // countdown
     (function() {
-      const target = new Date(Date.now() + (24 * 3600 + 36 * 60) * 1000);
-     
+      const target = new Date(Date.now() + (24 * 3600 + 36 * 60)
